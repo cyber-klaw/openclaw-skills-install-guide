@@ -1,0 +1,39 @@
+=== Session YYYY-MM-DD HH:MM ===
+Agent: Initializer Agent
+Action: Project initialization
+
+Initialized project: [PROJECT_NAME]
+Created scaffolding:
+- features.json with [N] features across [categories]
+- init.sh startup script (executable)
+- claude-progress.txt (this file)
+- Git repository initialized
+
+Project Structure:
+- Category breakdown: setup (2), functional (2), ui (1), api (1), auth (2), data (1), testing (1)
+- Total features: 10 (expand to 200+ for complex projects)
+
+Next Steps for Coding Agents:
+1. Run ./init.sh to start environment
+2. Read features.json, identify first incomplete feature (feat-003)
+3. Follow coding agent workflow: implement → test → commit → update progress
+
+Notes:
+- Ensure init.sh completes without errors before starting feature work
+- Always test baseline functionality before adding new code
+- One feature at a time, fully tested before marking complete
+
+=== Session YYYY-MM-DD HH:MM ===
+Agent: Coding Agent
+Worked on: feat-XXX - [Feature Description]
+
+Completed:
+- [Implementation details]
+- [Files created/modified]
+
+Testing:
+- [Test method used]
+- [Results: passed/failed]
+
+Blockers: [None | description]
+Next: [Recommended next feature]

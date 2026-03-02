@@ -1,0 +1,136 @@
+{
+  "project": "Example Project",
+  "description": "Replace with your project description",
+  "version": "1.0.0",
+  "features": [
+    {
+      "id": "feat-001",
+      "category": "setup",
+      "description": "Project initialized with proper structure",
+      "steps": [
+        "Directory structure created",
+        "Package.json configured",
+        "Dependencies defined"
+      ],
+      "passes": true,
+      "notes": "Completed by initializer agent"
+    },
+    {
+      "id": "feat-002",
+      "category": "setup",
+      "description": "Development environment can be started with init.sh",
+      "steps": [
+        "init.sh script created",
+        "Script is executable",
+        "Server starts successfully",
+        "Health check passes"
+      ],
+      "passes": true,
+      "notes": "Completed by initializer agent"
+    },
+    {
+      "id": "feat-003",
+      "category": "functional",
+      "description": "User can view the homepage",
+      "steps": [
+        "Navigate to root URL",
+        "Page loads without errors",
+        "Basic layout renders correctly"
+      ],
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "feat-004",
+      "category": "functional",
+      "description": "User can navigate between pages",
+      "steps": [
+        "Homepage loads",
+        "Click navigation link",
+        "Target page loads",
+        "URL updates correctly"
+      ],
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "feat-005",
+      "category": "ui",
+      "description": "Responsive layout works on mobile",
+      "steps": [
+        "Open on mobile device or emulator",
+        "Layout adapts to screen size",
+        "All elements accessible",
+        "No horizontal scrolling"
+      ],
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "feat-006",
+      "category": "api",
+      "description": "API health check endpoint returns 200",
+      "steps": [
+        "Start development server",
+        "Send GET to /api/health",
+        "Receive 200 status",
+        "Response includes status: 'ok'"
+      ],
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "feat-007",
+      "category": "auth",
+      "description": "User can create an account",
+      "steps": [
+        "Navigate to signup page",
+        "Fill in valid email and password",
+        "Submit registration form",
+        "Receive confirmation",
+        "User record created in database"
+      ],
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "feat-008",
+      "category": "auth",
+      "description": "User can log in with credentials",
+      "steps": [
+        "Navigate to login page",
+        "Enter valid credentials",
+        "Submit login form",
+        "Redirected to dashboard",
+        "Session token created"
+      ],
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "feat-009",
+      "category": "data",
+      "description": "User data persists in database",
+      "steps": [
+        "Create user account",
+        "Restart server",
+        "Log in with same credentials",
+        "User data retrieved correctly"
+      ],
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "feat-010",
+      "category": "testing",
+      "description": "Unit tests run successfully",
+      "steps": [
+        "Run npm test",
+        "All tests pass",
+        "Coverage report generated"
+      ],
+      "passes": false,
+      "notes": ""
+    }
+  ]
+}

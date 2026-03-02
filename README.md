@@ -1,55 +1,29 @@
 # OpenClaw Skills Install Guide
 
-This repo documents how to install and organize the current OpenClaw skills setup.
+一键安装并同步当前技能目录结构（与你现在一致）：
 
-## Prerequisites
+- `skills/dev/code-dev-with-gemini`
+- `skills/dev/long-running-agent-harness`
+- `skills/dev/anthropic-frontend-design`
+- `skills/meta/skill-creator`
 
-- macOS / Linux
-- [OpenClaw](https://github.com/openclaw/openclaw)
-- `gh` authenticated (`gh auth login`)
-
-## Skill Directory Layout
-
-```bash
-~/.openclaw/workspace/skills/
-├── dev/
-│   ├── code-dev-with-gemini/
-│   ├── long-running-agent-harness/
-│   └── anthropic-frontend-design/
-└── meta/
-    └── skill-creator/
-```
-
-## Install / Sync Skills
-
-### 1) Clone official skill source (example)
+## 一键安装
 
 ```bash
-git clone https://github.com/openclaw/skills
+git clone https://github.com/cyber-klaw/openclaw-skills-install-guide.git
+cd openclaw-skills-install-guide
+bash scripts/install.sh
 ```
 
-### 2) Copy a skill into workspace
+默认安装到：`~/.openclaw/workspace/skills`
+
+如需指定目录：
 
 ```bash
-cp -R skills/skills/qrucio/anthropic-frontend-design ~/.openclaw/workspace/skills/dev/
+bash scripts/install.sh /custom/skills/path
 ```
 
-### 3) Use skill-creator to create categorized skills
+## 说明
 
-```bash
-python3 ~/.openclaw/workspace/skills/meta/skill-creator/scripts/init_skill.py my-new-skill --category dev --skills-root ~/.openclaw/workspace/skills
-```
-
-## Agent Reach Runtime Install (separate from skill folder)
-
-```bash
-python3.11 -m pip install --user https://github.com/Panniantong/agent-reach/archive/main.zip
-agent-reach install --env=auto
-agent-reach doctor
-```
-
-## Notes
-
-- Keep custom skills in `~/.openclaw/workspace/skills`.
-- Keep a `SKILL_MAP.md` for quick routing and maintenance.
-- Runtime tools (like Agent Reach) are installed separately from skill folders.
+- 安装脚本会覆盖同名技能目录（保证结果一致）。
+- 会自动生成/刷新 `SKILL_MAP.md`。
